@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/images/logo_bege.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="My Dear Flower Shop — My Dear, there is good news… Flores frescas e arranjos especiais em Curitiba. Encomendas pelo WhatsApp."
+    />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta
+      property="og:title"
+      content="My Dear Flower Shop — My Dear, there is good news…"
+    />
+    <meta
+      property="og:description"
+      content="Flores frescas e arranjos especiais em Curitiba. Entrega por carro, pagamento em até 3x, flores da estação."
+    />
+    <meta property="og:image" content="/images/logo_bege.png" />
+    <meta property="og:image:alt" content="Logo da My Dear Flower Shop" />
+    <meta property="og:site_name" content="My Dear Flower Shop" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="My Dear Flower Shop — My Dear, there is good news…"
+    />
+    <meta
+      name="twitter:description"
+      content="Flores frescas e arranjos especiais em Curitiba. Encomendas pelo WhatsApp."
+    />
+    <meta name="twitter:image" content="/images/logo_bege.png" />
+    <meta name="twitter:image:alt" content="Logo da My Dear Flower Shop" />
+
+    <!-- Swiper CSS via CDN (para evitar imports CSS no TypeScript) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Dear Flower Shop — My Dear, there is good news…</title>
+
+    <!-- JSON-LD: LocalBusiness (Florist) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Florist",
+        "name": "My Dear Flower Shop",
+        "url": "/",
+        "image": "/images/logo_bege.png",
+        "telephone": "+55 41 99892-0050",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "R. Dr. Goulin, 1275 - Juvevê",
+          "addressLocality": "Curitiba",
+          "addressRegion": "PR",
+          "addressCountry": "BR"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "13:00"
+          }
+        ],
+        "sameAs": ["https://instagram.com/mydearflowershop"]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

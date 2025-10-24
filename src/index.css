@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+/* ========================================
+   FONTES
+   ======================================== */
+:root {
+  --font-display: "Fraunces", serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* ========================================
+   PALETA DEFINITIVA — MY DEAR FLOWER SHOP
+   ======================================== */
+:root {
+  /* Cores principais */
+  --color-logo-bg: #fee7d5; /* Background da logo/header */
+  --color-logo: #af9771; /* Cor da logo e menu */
+  --color-dark: #524439; /* Texto escuro */
+  --color-medium: #b9a89b; /* Tom médio */
+  --color-mint: #bbd5c5; /* Verde menta */
+  --color-sage: #869e8f; /* Verde sálvia */
+
+  /* Mapeamento semântico */
+  --color-bg: #faf8f5; /* Fundo geral mais claro */
+  --color-surface: #ffffff; /* Cards e superfícies */
+  --color-primary: #af9771; /* Botões primários */
+  --color-primary-hover: #9a8562; /* Hover primário */
+  --color-secondary: #869e8f; /* Botões secundários */
+  --color-accent: #bbd5c5; /* Destaques e badges */
+  --color-ink: #524439; /* Texto principal */
+  --color-border: #b9a89b; /* Bordas */
+
+  /* Border Radius */
+  --radius-card: 12px;
+  --radius-pill: 999px;
+}
+
+/* ========================================
+   ESTILOS GLOBAIS DE TIPOGRAFIA
+   ======================================== */
+body {
+  font-family: var(--font-body);
+}
+
+.h1,
+.h2,
+.price {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+.btn {
+  font-weight: 600;
+}
+
+.badge-script {
+  font-family: "Parisienne", cursive;
+}
+
+/* ========================================
+   ESTILOS DO CARROSSEL INSTAGRAM
+   ======================================== */
+.instagram-swiper {
+  padding: 20px 40px 60px;
+}
+
+.instagram-swiper .swiper-button-next,
+.instagram-swiper .swiper-button-prev {
+  color: var(--color-primary);
+  background: var(--color-surface);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.instagram-swiper .swiper-button-next:after,
+.instagram-swiper .swiper-button-prev:after {
+  font-size: 20px;
+}
+
+.instagram-swiper .swiper-pagination-bullet {
+  background: var(--color-primary);
+  opacity: 0.5;
+}
+
+.instagram-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* ========================================
+   ESTILOS DO CARROSSEL DE PRODUTOS
+   ======================================== */
+.product-swiper {
+  padding: 20px 40px 60px;
+}
+
+.product-swiper .swiper-button-next,
+.product-swiper .swiper-button-prev {
+  color: var(--color-surface);
+  background: var(--color-primary);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-swiper .swiper-button-next:hover,
+.product-swiper .swiper-button-prev:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
+.product-swiper .swiper-button-next:after,
+.product-swiper .swiper-button-prev:after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product-swiper .swiper-pagination-bullet {
+  background: var(--color-primary);
+  opacity: 0.4;
+  width: 10px;
+  height: 10px;
+}
+
+.product-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 24px;
+  border-radius: 5px;
+}
