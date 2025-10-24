@@ -1,9 +1,11 @@
 export default function HeroMosaic() {
   // Coleção de imagens reais dos produtos (pasta public)
   const baseImages = [
-    "/images/produtos/hand-tied/image-1.png",
-    "/images/produtos/hand-tied/image-2.png",
-    "/images/produtos/hand-tied/image-3.png",
+    "/images/produtos/hand-tied/mini.png",
+    "/images/produtos/hand-tied/pequeno.png",
+    "/images/produtos/hand-tied/medio.png",
+    "/images/produtos/hand-tied/grande.png",
+    "/images/produtos/hand-tied/enorme.png",
     "/images/produtos/jornal-my-dear/image-1.png",
     "/images/produtos/jornal-my-dear/image-2.png",
     "/images/produtos/dear-bag/image-1.png",
@@ -31,7 +33,7 @@ export default function HeroMosaic() {
 
   // Menos imagens para um visual mais leve
   const tiles = Array.from(
-    { length: 24 },
+    { length: 20 },
     (_, i) => baseImages[i % baseImages.length]
   );
 
